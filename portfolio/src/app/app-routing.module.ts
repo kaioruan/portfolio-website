@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HeaderComponent },
+  {
+    path: '', component: HeaderComponent,
+    children: [
+      { path: '', component: HomeComponent },
+      // Adicione outros componentes como filhos, se necessário
+    ]
+  },
 ];
 
 @NgModule({
