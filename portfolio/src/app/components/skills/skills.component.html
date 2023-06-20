@@ -1,0 +1,20 @@
+<section class="skills" id="skills">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Ferramentas</span></h2>
+
+  <div class="container">
+    <div class="bar">
+        <div class="row">
+            <div *ngFor="let skill of data" class="info" >
+              <div>
+
+                <img src="{{skill.icon}}" alt="Icon">
+                <p>{{skill.name}}</p>
+              </div>
+            </div>
+          </div>
+
+    </div>
+</div>
+</section>
+
