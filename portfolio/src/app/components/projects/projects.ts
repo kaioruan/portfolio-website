@@ -2,7 +2,7 @@ export const projects = [
     {   
         id: 1,
         name: 'Helpdesk',
-        description: 'Aplicação Helpdesk onde é possível realizar Cadastros, Atualizações, Leitura e Remoção de Clientes e Técnicos em uma plataforma Helpdesk e também criação de Chamados, Atualização e Visualização.',
+        description: 'Aplicação Helpdesk com um CRUD de chamados, técnicos e clientes.',
         video: '../../../assets/videos/helpdesk.mp4',
         image:'../../../assets/images/helpdesk.png',
         url: 'https://github.com/kaioruan/helpdesk-java-angular',
@@ -12,12 +12,12 @@ export const projects = [
     {   
         id: 2,
         name: 'App-delivery',
-        description: 'Aplicação Fullstack sobre um delivery de bebidas. Foi construído de forma que tem 3 tipos de acesso, um acesso sendo Administrativo para gerenciar os conteúdos e adicionar ou remover novos vendedores, acesso de Vendedor onde é realizado os controles de cada venda vinculada ao vendedor e o acesso de cliente para realização de compras.',
+        description: 'Aplicação Fullstack sobre um delivery de bebidas.',
         video: '../../../assets/videos/app-delivery.mp4',
         image:'../../../assets/images/app-delivery.png',
         url: 'https://github.com/kaioruan/app-delivery',
-        backend: 'Javascript, React, Context API, CSS, RTL para elaboração de testes, Joi, Bcrypt, JWT e Dotenv.',
-        frontend: 'Javascript, NodeJS, Sequelize, Express, Mocha, Chai e Sinon para testes de integração, banco de dados relacional MySQL.',
+        backend: 'Javascript, React, Context API, CSS.',
+        frontend: 'Javascript, NodeJS, Testes de Integração, banco de dados relacional MySQL.',
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const projects = [
         image:'../../../assets/images/app-receitas.png',
         url: 'https://github.com/kaioruan/myRecipe-app',
         backend:'',
-        frontend: 'Javascript, React, Context API e Testes Unitários através da biblioteca RTL.',
+        frontend: 'Javascript, React, Context API e Testes Unitários.',
     },
     {
       id: 4,
@@ -37,6 +37,6 @@ export const projects = [
       image:'../../../assets/images/trivia.png',
       url: 'https://github.com/kaioruan/project-trivia-react-redux',
       backend:'',
-      frontend: 'Javascript, React, Redux, Arquitetura de Software, Componentização e elaboração de Testes Unitários através da biblioteca RTL.',
+      frontend: 'Javascript, React, Redux e Testes Unitários.',
   },
 ]

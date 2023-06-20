@@ -5,23 +5,35 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px #333;
   min-width: 320px;
+  height: 400px;
   position: fixed;
   left: 50%;
   padding: 10px;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 11;
-  background-color: gray;
+  background-color: rgb(199, 196, 196);
+}
+
+:host button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(37, 34, 34);
 }
 
 h2 {
   font-size: 24px;
-  margin-bottom: 10px;
 }
 
 p {
   font-size: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   font-family: "Arial";
   text-align: justify;
   text-transform: none;
@@ -36,7 +48,7 @@ span {
 }
 
 button {
-  background-color: #007bff;
+  /* background-color: #007bff; */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -46,26 +58,23 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: gray;
 }
 
 video {
-  width: 30rem;
-  height: 20rem;
-  border-radius: 4px;
+  width: 40rem;
+  /* height: 100%; */
+  /* padding: 0;
+  margin: 0;
   margin-top: 0;
+  margin-bottom: 0; */
 }
 
 .content-infos {
-  padding: 5px 10px;
   position: relative;
   display:flex;
   justify-content: space-between;
-}
-
-.content-infos > h2 {
-  font-size: 30px;
-  margin: 15px 0;
+  margin-top: -5rem;
 }
 
 .content-infos > p {
@@ -76,23 +85,25 @@ video {
 .container {
   padding: 5px 10px;
   position: relative;
-  /* border-radius: 1rem; */
-  /* border: greenyellow; */
-  /* border-color: rgb(150, 144, 144);
-  border-style: solid; */
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .box {
   display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-player {
+  height: 25rem;
+  /* background-color: red; */
+  padding: 0;
+  border:0;
+  margin: 0;
+  margin-top: -1.5rem;
 }
 
 .tecnologias {
-  margin: 2rem;
-}
-
-.tecnologias span:first-child {
   font-weight: 600;
-  font-size: 1rem;
-  text-align: start;
 }
