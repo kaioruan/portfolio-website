@@ -2,6 +2,11 @@
   background: rgb(255, 255, 255);
 }
 
+.start {
+  width: 100%;
+  height: 5rem;
+}
+
 .row {
   display: flex;
   align-items: center;
