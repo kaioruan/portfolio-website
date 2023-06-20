@@ -37,6 +37,7 @@
   font-family: "Arial";
   text-align: justify;
   text-transform: none;
+  line-height: 1.5rem;
 }
 
 .about .row .content .box-container {
