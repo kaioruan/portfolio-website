@@ -53,7 +53,7 @@ export const skills = [
   },
 
   {
-      "name": "Git",
+      "name": "Git VCS",
       "icon": "https://img.icons8.com/color/48/000000/git.png"
   },
   {
