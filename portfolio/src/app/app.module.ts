@@ -10,7 +10,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducationComponent } from './components/education/education.component';
-
+import { ProjectsComponent } from './components/projects/projects.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PopupComponent } from './components/popup/popup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +20,16 @@ import { EducationComponent } from './components/education/education.component';
     HomeComponent,
     AboutComponent,
     SkillsComponent,
-    EducationComponent
+    EducationComponent,
+    ProjectsComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatSlideToggleModule,
     NoopAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
