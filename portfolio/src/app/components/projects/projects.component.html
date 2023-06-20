@@ -1,0 +1,19 @@
+<div class="start" id="projects"></div>
+
+
+<section class="work">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+  <div class="cardlist" >
+    
+    <div class="box-container">
+  
+      <div *ngFor="let project of data" class="box" >
+          <button mat-button (click)="openPopup(project.id)">
+      
+          <img src="{{project.image}}" />
+        </button>
+      </div>
+  </div>
+
+
+</div>
