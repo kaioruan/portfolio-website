@@ -13,6 +13,11 @@ import { EducationComponent } from './components/education/education.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PopupComponent } from './components/popup/popup.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
+
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,14 +27,19 @@ import { PopupComponent } from './components/popup/popup.component';
     SkillsComponent,
     EducationComponent,
     ProjectsComponent,
-    PopupComponent
+    PopupComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatSlideToggleModule,
     NoopAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
