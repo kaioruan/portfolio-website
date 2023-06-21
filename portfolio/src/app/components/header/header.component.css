@@ -85,7 +85,7 @@ header .navbar ul li a:hover::before {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .burger {
     display: block;
     cursor: pointer;
