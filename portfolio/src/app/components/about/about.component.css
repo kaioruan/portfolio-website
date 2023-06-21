@@ -1,0 +1,115 @@
+.about {
+  background: rgb(255, 255, 255);
+}
+
+.start {
+  width: 100%;
+  height: 5rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Arial", sans-serif;
+  color: #020133;
+}
+
+.about .row .content .tag {
+  font-size: 1.4rem;
+  color: #020133;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.about .row .content p {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  font-family: "Arial";
+  text-align: justify;
+  text-transform: none;
+  line-height: 1.5rem;
+}
+
+.about .row .content .box-container {
+  font-family: "Arial";
+  font-weight: 600;
+}
+
+.about .row .content .box-container .box p {
+  text-transform: none;
+}
+
+.about .row .content .box-container .box p span {
+  color: #011aff;
+}
+
+.resumebtn {
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resumebtn .btn {
+  padding: 1.3rem 2rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+}
+
+.resumebtn .btn span {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.resumebtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.resumebtn .btn:hover {
+  background: #1a047e;
+}
+
+.resumebtn .btn:hover i {
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 600px) {
+
+  .row {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .about .row .content {
+    padding: 1rem;
+  }
+
+  .content {
+    width: 100%;
+    margin-top: -3rem;
+  }
+  .about .row .content .box-container {
+    gap: 0;
+  }
+
+  .resumebtn {
+    margin-top: 2rem;
+  }
+}
