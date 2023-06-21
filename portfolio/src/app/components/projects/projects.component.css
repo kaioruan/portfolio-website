@@ -26,28 +26,17 @@
 .work .box-container {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 5.5rem; */
   justify-content: center;
   column-gap: 5.5rem;
   align-items: center;
-  background-color: red;
-
   height: 100%;
-  /* margin: 3rem; */
-}
-
-.work .box-container:last-child {
-  justify-content: left;
 }
 
 .box {
   width: 30rem;
   height: 20rem;
   display: flex;
-  /* padding: 5rem; */
-  align-content: center;
-  /* align-items: center; */
-  /* justify-content: center; */
+  padding: 2rem 4rem;
 }
 
 .box button {
