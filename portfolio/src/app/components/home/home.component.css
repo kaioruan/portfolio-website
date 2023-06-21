@@ -193,8 +193,6 @@ body{
   }
 
   .image img{
-    /* width: 40px; */
-
     width: 10rem;
     margin-left: 0;
     border-radius: 50%;
@@ -234,4 +232,47 @@ body{
     font-size: 1.5rem;
   }
   
+}
+
+@media screen and (max-width: 1366px) {
+  .context {
+    top: 20vh;
+    display: block;
+    text-align: center;
+  }
+
+  .elements {
+    width: 100%;
+  }
+
+  .elements div {
+    width: 100%;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes typing {
+    from { width: 100% }
+    to { width: 100% }
+  }
+
+  .image img{
+    margin-left: 20rem;
+    margin-right: 2rem;
+    width: 20rem;
+  }
+
+  .image {
+    z-index: 1;
+  }
+
+  .typed-out{
+    border-right: none;
+    animation: 
+      typing 3.5s infinite;
+    text-align: start;
+    margin-left: -1rem;
+  }
 }
