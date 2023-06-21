@@ -193,7 +193,7 @@ body{
   }
 
   .image img{
-    width: 10rem;
+    width: 5rem;
     margin-left: 0;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -234,7 +234,7 @@ body{
   
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) and (min-width: 1050px)  {
   .context {
     top: 20vh;
     display: block;
