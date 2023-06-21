@@ -1,0 +1,94 @@
+/* footer section starts */
+.footer{
+  height: 50vh;
+  padding-top: 0;
+  background: rgb(0, 1, 43);
+}
+.footer .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .box-container .box{
+  flex: 1 1 15rem;
+  margin: 1rem;
+}
+.footer .box-container .box h3{
+  font-size: 1.5rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+.footer .box-container .box p{
+  font-size: 1.0rem;
+  color: #ccc;
+  padding: .5rem 0;
+  text-transform: none;
+}
+.footer .box-container .box p i{
+  padding-right: 0.5rem;
+  color: #ffae00;
+}
+.footer .box-container .box a{
+  font-size: 1rem;
+  color: rgb(238, 238, 238);
+  padding: .3rem 0;
+  display: block;
+}
+.footer .box-container .box a:hover{
+  color: #ffae00;
+}
+.footer .box-container .box .share{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.footer .box-container .box .share a{
+  height: 50px;
+  width: 50px;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  transition: .2s;
+  background: rgb(230, 230, 230);
+  color: #02094b;
+  border: none;
+}
+
+.footer .box-container .box .share a img {
+  width: 40px;
+}
+
+.footer .box-container .box .share a:hover{
+  background: transparent;
+  transform: scale(0.98);
+  border: .1rem solid rgb(180, 178, 178);
+  color: #ffae00;
+}
+.footer .credit{
+  padding: 0.5rem 0 0 0;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border-top: .1rem solid #fff3;
+}
+.footer .credit a{
+  color: #ffae00;
+}
+.footer .fa{
+    color: #E90606;
+    margin: 0 .3rem;
+    font-size: 1rem;
+    animation: pound .35s infinite alternate;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    display: none;
+  }
+}
+  
