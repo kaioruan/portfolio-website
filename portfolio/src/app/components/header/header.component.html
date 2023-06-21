@@ -1,16 +1,24 @@
 <header>
-    <a routerLink="/" class="logo"><i class="material-icons">javascript</i>Kaio Oliveira</a>
-    <nav class="navbar">
-      <ul>
-      <li><a class="active" href="#home">Inicio</a></li>
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Formação</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#contact">Contato</a></li>
-      </ul>
-  </nav>
+  <a routerLink="/" class="logo">
+    <i class="material-icons">javascript</i>Kaio Oliveira
+  </a>
+  <nav class="navbar" [class.open]="isMenuOpen">
+    <ul>
+      <li class="burger" (click)="toggleMenu()">
+        <i class="material-icons">{{ isWindowSmall ? "close" : "menu" }}</i>
+      </li>
+      <li class="menu" [class.is-open]="isMenuOpen" [ngStyle]="{'display': (isMenuOpen) ? 'none' : 'block' }">
 
+        <a href="#home" class="menu-item" (click)="closeMenu()">Inicio</a>
+        <a href="#about" class="menu-item" (click)="closeMenu()">Sobre</a>
+        <a href="#skills" class="menu-item" (click)="closeMenu()">Skills</a>
+        <a href="#education" class="menu-item" (click)="closeMenu()">Formação</a>
+        <a href="#projects" class="menu-item" (click)="closeMenu()">Projetos</a>
+        <a href="#contact" class="menu-item" (click)="closeMenu()">Contato</a>
+      </li>
+
+    </ul>
+  </nav>
 </header>
 <br id="home">
 <br>
@@ -21,4 +29,5 @@
 <app-about></app-about>
 <app-skills></app-skills>
 <app-education></app-education>
+<app-projects></app-projects>
 <!-- <router-outlet></router-outlet> -->

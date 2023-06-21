@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isWindowSmall = false;
+  isMenuOpen = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    if (window.innerWidth < 768) {
+      this.isMenuOpen = true;
+    }
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    this.isWindowSmall = !this.isWindowSmall;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
   }
 
 }
