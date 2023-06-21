@@ -30,6 +30,7 @@ export class PopupComponent {
   }
 
   closePopup(): void {
+    localStorage.removeItem('project');
     this.dialogRef.close();
   }
 
