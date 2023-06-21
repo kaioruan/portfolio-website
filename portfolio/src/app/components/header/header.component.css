@@ -101,7 +101,8 @@ header .navbar ul li a:hover::before {
     top: 6.5rem;
     left: 0;
     right: 0;
-
+    height: 90vh;
+    background-color: white;
     z-index: 999;
   }
   .menu a {
