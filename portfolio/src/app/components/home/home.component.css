@@ -13,9 +13,13 @@ body{
 .context {
     width: 100%;
     position: absolute;
-    top:30vh;
-    display: flex;
-    justify-content: center;
+    top: 20vh;
+}
+
+.elements div {
+  font-size: 1.5rem;
+  width: 100%;
+  justify-content: center;
 }
 
 .context div{
@@ -29,7 +33,19 @@ body{
 
 .container {
   display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+.item {
+  order: 1;
+}
+
 
 .typed-out{
   overflow: hidden;
@@ -46,12 +62,10 @@ body{
 }
 
 .image {
-  flex: 1 1 40rem;
   z-index: 1;
 }
 .image img {
   width: 25rem;
-  margin-left: 30rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -178,4 +192,96 @@ body{
         opacity: 0;
         border-radius: 50%;
     }
+}
+
+@media screen and (max-width: 840px) {
+  .context {
+    display: block;
+    text-align: center;
+  }
+
+  .image {
+    z-index: 1;
+  }
+
+  .image img{
+    width: 5rem;
+    margin-left: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  .elements div {
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @keyframes typing {
+    from { width: 100% }
+    to { width: 100% }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .item {
+    order: 1;
+  }
+
+  .area {
+    height: 100vh;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 1400px) and (min-width: 841px)  {
+  .context {
+    top: 20vh;
+    display: block;
+    text-align: center;
+  }
+
+  .elements div {
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes typing {
+    from { width: 100% }
+    to { width: 100% }
+  }
+
+  .image img{
+    /* margin-left: 20rem;
+    margin-right: 2rem; */
+    width: 20rem;
+  }
+
+  .image {
+    z-index: 1;
+  }
+
+  .typed-out{
+    border-right: none;
+    animation: 
+      typing 3.5s infinite;
+    text-align: start;
+    /* margin-left: -1rem; */
+  }
 }

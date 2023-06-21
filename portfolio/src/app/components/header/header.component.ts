@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 840) {
       this.isMenuOpen = true;
     }
   }
