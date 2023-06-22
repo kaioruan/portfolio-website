@@ -26,10 +26,10 @@ describe('HeaderComponent', () => {
   it('deve inicializar com o menu fechado', () => {
     expect(component.isMenuOpen).toBe(false);
   });
-  it('Ao iniciar com o menu fechado, tem que apresentar o Header contendo Inicio, Sobre, Skills, Formação, Projetos e Contato', () => {
+  it('Ao iniciar com o menu fechado, tem que apresentar o Header contendo Início, Sobre, Skills, Formação, Projetos e Contato', () => {
     const menuElement = fixture.nativeElement.querySelector('.menu');
     expect(component.isMenuOpen).toBe(false);
-    expect(menuElement.textContent).toContain('Inicio');
+    expect(menuElement.textContent).toContain('Início');
     expect(menuElement.textContent).toContain('Sobre');
     expect(menuElement.textContent).toContain('Skills');
     expect(menuElement.textContent).toContain('Formação');
@@ -48,11 +48,11 @@ describe('HeaderComponent', () => {
     burgerElement.click();
     expect(component.isMenuOpen).toBe(false);
   });
-  it('Ao clicar no menu, aparece o texto renderizado em tag a Inicio', () => {
+  it('Ao clicar no menu, aparece o texto renderizado em tag a Início', () => {
 
     const menuElement = fixture.nativeElement.querySelector('.menu');
     menuElement.click();
-    expect(menuElement.textContent).toContain('Inicio');
+    expect(menuElement.textContent).toContain('Início');
   });
   it('Ao clicar no menu, aparece o texto renderizado em tag a Sobre', () => {
     
