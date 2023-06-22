@@ -1,6 +1,6 @@
 # Portfólio : ANGULAR - TYPESCRIPT
 
-Esse projeto foi desenvolvido durante um teste técnico pela empresa GRUPO ENACOM, meu porfólio pessoal que consta minhas informações, experiências e conhecimentos.
+Esse projeto foi desenvolvido durante um teste técnico pela empresa ENACOM GROUP, meu porfólio pessoal que consta minhas informações, experiências e conhecimentos.
 
 Aqui você vai encontrar os detalhes de como foi o desenvolvimento do projeto e quais foram os requisitos técnicos necessários para a entrega do desafio.
 
