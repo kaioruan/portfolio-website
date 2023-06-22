@@ -51,11 +51,7 @@ Para poder executar os testes, na raiz, utilize o comando o comando `npx ng test
 ## Clique na imagem para rodar um video demonstrativo.
 
 
-
-
-
-[![Watch the video]([https://user-images.githubusercontent.com/98183352/227374367-80900de5-dc5b-4e16-85d8-918b11d1fe22.mp4](https://github.com/kaioruan/portfolio-website/assets/98183352/03083897-7ce3-487b-b0a1-59bd5bd2e7ce)https://github.com/kaioruan/portfolio-website/assets/98183352/03083897-7ce3-487b-b0a1-59bd5bd2e7ce)]
-
+[![Watch the video](https://user-images.githubusercontent.com/98183352/227374318-45ff9958-0a34-4487-bbb5-2757ec3ad8f3.png)](https://github.com/kaioruan/portfolio-website/assets/98183352/2ea48831-f71f-4f1b-afb4-b423149e2d77)
 
 ---
 
