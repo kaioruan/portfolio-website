@@ -39,19 +39,14 @@ export class ContactMeComponent implements OnInit {
   public sendEmail(e: Event) {
     e.preventDefault();
     emailjs.sendForm('service_ltpnm7k', 'template_p0gq4b1', e.target as HTMLFormElement, '_7lMpmHyMILY-S8RO')
-      .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
-        this.Contact.name = '';
-        this.Contact.email = '';
-        this.Contact.message = '';
         Swal.fire({
           title: 'Enviado!',
-          text: 'Email foi enviado com sucesso!',
+          text: 'Email foi enviado com sucesso, entrarei em contato o mais breve possível!',
           icon: 'success',
           confirmButtonText: 'OK'
         });
-      }, (error) => {
-        console.log(error.text);
-      });
+        this.Contact.name = '';
+        this.Contact.email = '';
+        this.Contact.message = '';
   }
 }
