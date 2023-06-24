@@ -17,11 +17,11 @@
   </div>
     <form class="contact-form" id="contact-form" (submit)="sendEmail($event)">
       <label>Nome</label>
-      <input type="text" name="user_name" [(ngModel)]="Contact.name" [formControl]="name">
+      <input type="text" name="user_name" [(ngModel)]="Contact.name" [formControl]="name" required>
       <label>Email</label>
-      <input type="email" name="user_email" [(ngModel)]="Contact.email" [formControl]="email">
+      <input type="email" name="user_email" [(ngModel)]="Contact.email" [formControl]="email" required>
       <label>Mensagem</label>
-      <textarea name="message" [(ngModel)]="Contact.message" [formControl]="message"></textarea>
+      <textarea name="message" [(ngModel)]="Contact.message" [formControl]="message" required></textarea>
       <input type="submit" value="Enviar" [disabled]="!validateSubmit()">
   </form>
 </div>
