@@ -1,17 +1,16 @@
 <div class="start" id="skills"></div>
 <section class="skills">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Ferramentas</span></h2>
-
-  <div class="container">
-    <div class="bar">
-        <div class="row">
-            <div *ngFor="let skill of data" class="info" >
-                <img src="{{skill.icon}}" alt="Icon">
-                <p>{{skill.name}}</p>
-            </div>
-          </div>
+  <h2 class="heading"><i></i> Skills & <span>Ferramentas</span></h2>
+  <mat-card class="container">
+    <mat-card-content class="bar">
+      <div class="row">
+        <div *ngFor="let skill of data" class="info" >
+            <img src="{{skill.icon}}" alt="Icon">
+            <p>{{skill.name}}</p>
+        </div>
     </div>
-</div>
+    </mat-card-content>
+  </mat-card>
 </section>
+
 

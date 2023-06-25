@@ -16,6 +16,7 @@ import { PopupComponent } from './components/popup/popup.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
@@ -41,7 +42,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
