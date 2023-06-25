@@ -14,18 +14,18 @@
   background: #e5ecfb;
 }
 
-.work {
+.projects {
   background: linear-gradient(to bottom, #000031, #00002c);
   min-height: 110vh;
 }
-.work h2 {
+.projects h2 {
   color: #fff;
   padding: 3rem;
 }
-.work .heading span {
+.projects .heading span {
   color: rgb(255, 230, 0);
 }
-.work .box-container {
+.projects .box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -51,7 +51,7 @@
 	outline: inherit;
 }
 
-.work .box-container .box img {
+.projects .box-container .box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -59,7 +59,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.work .box-container .box:hover {
+.projects .box-container .box:hover {
   transform: scale(1.03);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
