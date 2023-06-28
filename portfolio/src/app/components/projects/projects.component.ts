@@ -32,7 +32,6 @@ export class ProjectsComponent implements OnInit {
   openPopup(id: any): void {
     const project = this.data.find((project) => project.id === id);
     localStorage.setItem('project', JSON.stringify(project));
-    console.log(project)
     const dialogRef = this.dialog.open(PopupComponent, {
       width: '250px',
     });

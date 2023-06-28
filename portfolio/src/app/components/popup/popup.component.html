@@ -1,22 +1,22 @@
 <button mat-button (click)="closePopup()"> <i class="material-icons">close</i></button>
-<div *ngFor="let item of data">
+<div>
   <div class="box" >
     <video  controls class="video-player">
-      <source src="{{item.video}}" type="video/mp4">
+      <source src="{{data[0].video}}" type="video/mp4">
       <!-- <source src="assets/videos/vid.ogg" type="video/ogg"> -->
       Your browser does not support the video tag.
     </video>
     <div class="container" >
       <div class="content-infos">
   
-        <h2>{{item.name}}</h2>
-        <a href="{{item.url}}" target="_blank" >
+        <h2>{{data[0].name}}</h2>
+        <a href="{{data[0].url}}" target="_blank" >
           <img src="../../../assets/images/github.png" alt="Icon">
         </a>
       </div>
-      <p>{{item.description}}</p>
+      <p>{{data[0].description}}</p>
       <p class="tecnologias">Tecnologias Usadas: </p>
-      <p>{{item.frontend}} {{item.backend}}</p>
+      <p>{{data[0].frontend}} {{data[0].backend}}</p>
     </div>
   </div>
 </div>

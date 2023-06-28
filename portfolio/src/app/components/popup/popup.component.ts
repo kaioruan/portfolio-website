@@ -19,14 +19,13 @@ interface Project {
 })
 export class PopupComponent {
 
-  data: any;
+  data: Project[] = [];
 
   constructor(public dialogRef: MatDialogRef<PopupComponent>) { }
 
   ngOnInit(): void {
     const project = localStorage.getItem('project');
     this.data = [JSON.parse(project || '{}')];
-    console.log(this.data);
   }
 
   closePopup(): void {
