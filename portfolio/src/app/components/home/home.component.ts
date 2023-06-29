@@ -16,7 +16,8 @@ export class HomeComponent implements OnInit {
       strings: ['Sou Desenvolvedor Fullstack'],
       typeSpeed:100,
       backSpeed:60,
-      loop:true
+      loop:true,
+      smartBackspace: true
     });
   }
 
