@@ -13,9 +13,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     let typed = new Typed('.developer', {
-      strings: ['Sou Desenvolvedor Fullstack'],
+      strings: ['Desenvolvedor Fullstack'],
       typeSpeed:100,
-      backSpeed:60,
+      backSpeed:90,
       loop:true,
       smartBackspace: true
     });
