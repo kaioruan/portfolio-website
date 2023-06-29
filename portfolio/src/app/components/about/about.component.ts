@@ -15,7 +15,9 @@ export class AboutComponent implements OnInit {
       strings: ['Full Stack Developer'],
       typeSpeed:100,
       backSpeed:60,
-      loop:true
+      loop:true,
+      backDelay: 2000,
+      smartBackspace: true,
     });
 
   }
