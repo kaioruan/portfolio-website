@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,12 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    let typed = new Typed('.developer', {
+      strings: ['Sou Desenvolvedor Fullstack'],
+      typeSpeed:100,
+      backSpeed:60,
+      loop:true
+    });
   }
 
 }

@@ -46,21 +46,6 @@ body{
   order: 1;
 }
 
-
-.typed-out{
-  overflow: hidden;
-  border-right: .15em solid rgb(126, 83, 5);
-  white-space: nowrap;
-  animation: 
-    typing 3.5s infinite;
-  font-size: 1.6rem;
-  width: 0;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 26rem}
-}
-
 .image {
   z-index: 1;
 }
@@ -225,11 +210,10 @@ body{
     align-items: center;
   }
 
-
-  @keyframes typing {
-    from { width: 100% }
-    to { width: 100% }
+  span {
+    font-size: 1.5rem;
   }
+
 
   .container {
     display: flex;
@@ -267,14 +251,11 @@ body{
     align-items: center;
   }
 
-  @keyframes typing {
-    from { width: 100% }
-    to { width: 100% }
+  span {
+    font-size: 1.5rem;
   }
 
   .image img{
-    /* margin-left: 20rem;
-    margin-right: 2rem; */
     width: 20rem;
   }
 
@@ -282,11 +263,4 @@ body{
     z-index: 1;
   }
 
-  .typed-out{
-    border-right: none;
-    animation: 
-      typing 3.5s infinite;
-    text-align: start;
-    /* margin-left: -1rem; */
-  }
 }
