@@ -17,12 +17,7 @@ export class AboutComponent implements OnInit {
       backSpeed:60,
       loop:true,
       backDelay: 2000,
-      startDelay: 1000,
       smartBackspace: true,
-      showCursor: false,
-      shuffle: false,
-      fadeOut: true,
-      fadeOutDelay: 2000,
     });
 
   }
