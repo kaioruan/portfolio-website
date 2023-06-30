@@ -23,7 +23,6 @@ export class AboutComponent implements OnInit {
       shuffle: false,
       fadeOut: true,
       fadeOutDelay: 2000,
-      backwards: true,
     });
 
   }
